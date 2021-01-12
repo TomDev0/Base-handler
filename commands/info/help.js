@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");// obviamente necesitamso discord.js bruh si no sabes como ponerlo solo mira el archivo de la carpeta handlers posdata todos los comandos necesitan el module exports
+const { MessageEmbed } = require("discord.js");// obviamente necesitamos discord.js bruh si no sabes como ponerlo solo mira el archivo de la carpeta handlers posdata todos los comandos necesitan el module exports
 
 module.exports = {
   name: "help",
@@ -16,7 +16,7 @@ module.exports = {
 
       let embed = new MessageEmbed()
         .setAuthor(command.name, client.user.displayAvatarURL())
-        .addField("Descripción", command.description || "N/A")
+        .addField("DescripciÃ³n", command.description || "N/A")
         .addField("como usarlo?", "`" + command.usage + "`" || "N/A")
         .setThumbnail(client.user.displayAvatarURL())
         .setColor("GREEN")
