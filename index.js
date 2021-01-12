@@ -1,5 +1,5 @@
 const { Client, Collection } = require("discord.js");
-const { config } = require("dotenv");
+const { config } = require("dotenv"); //necesitamos la npm de dontev si no sabes como mira el archivo de la carptea handlers
 const { token, default_prefix } = require("./config.json")
 const client = new Client({
     disableEveryone: true
